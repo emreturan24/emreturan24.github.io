@@ -1,0 +1,113 @@
+/* ===== Genel ===== */
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+/* ===== Header ===== */
+
+header{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ===== Menü ===== */
+
+nav{
+    background:#333;
+    text-align:center;
+    padding:12px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+nav a:hover{
+    color:#ddd;
+}
+
+/* ===== Ana içerik ===== */
+
+.container{
+    width:80%;
+    margin:auto;
+    background:white;
+    padding:20px;
+    margin-top:20px;
+}
+
+.contact-container{
+    width:600px;
+    margin:40px auto;
+    padding:25px;
+    background:white;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.contact-container h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* input alanları */
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    box-sizing:border-box;
+}
+
+/* buton */
+
+button{
+    background:#333;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#555;
+}
+
+/* ===== Footer ===== */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:12px;
+    margin-top:30px;
+}
+
+/* ===== Duyuru Sayfası Butonu ===== */
+.home-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #4facfe;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.home-button:hover {
+    background: #0077ff;
+    cursor: pointer;
+}

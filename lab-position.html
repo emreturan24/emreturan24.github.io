@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Duyuru Kartı</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* LAB SAYFA ÖZEL CSS */
+        body {
+            background: #e8f0fe;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .card-container {
+            position: relative; /* relative kapsayıcı */
+            width: 600px;
+            margin: 80px auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Absolute öğeler */
+        .badge1 {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #ff4757;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .badge2 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #1e90ff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            z-index: 2; /* z-index örneği */
+        }
+
+        .badge3 {
+            position: absolute;
+            bottom: 20px;
+            right: 50%;
+            transform: translateX(50%);
+            background: #2ed573;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Fixed öğe */
+        .fixed-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            z-index: 100;
+        }
+
+        /* Hover ve animasyonlar */
+        .card-container:hover {
+            transform: scale(1.02);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .badge1:hover,
+        .badge2:hover,
+        .badge3:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card-container">
+    <div class="badge1">Yeni</div>
+    <div class="badge2">Önemli</div>
+    <div class="badge3">Duyuru</div>
+
+    <h2>Üniversite Kampüs Etkinliği</h2>
+    <p>
+        Bu hafta sonu kampüsümüzde teknoloji ve yazılım kulübü tarafından
+        “Kodlama Maratonu” düzenlenecektir. Tüm öğrenciler davetlidir!
+    </p>
+</div>
+
+<div class="fixed-footer">
+    © 2026 Emre Turan - Kampüs Duyuruları
+</div>
+
+</body>
+</html>
